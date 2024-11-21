@@ -10,7 +10,7 @@ namespace MyGame.CraftingSystem
         Poor,      
         Common,
         Uncommon,
-        Rate,
+        Rare,
         Epic,
         Legendary
     }
