@@ -74,6 +74,8 @@ namespace MyGame.CraftingSystem
 
         private bool CheckMaterials(Recipe recipe)                             //재료 확인 함수
         {
+            playerInventory = inventoryManager.GetInventory();
+
             foreach (var material in recipe.requiredMaterials)
             {
                 if (!playerInventory.HasEnough(material.Key, material.Value))
